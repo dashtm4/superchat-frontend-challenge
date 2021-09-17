@@ -1,0 +1,15 @@
+@import '../../styles';
+
+.form-input--wrapper {
+  .label {
+    @include font-style($color--label, 'Roboto', 11px);
+    margin-bottom: 7px;
+
+    text-transform: uppercase;
+  }
+
+  .form-input--element {
+    position: relative;
+    width: 300px;
+  }
+}
