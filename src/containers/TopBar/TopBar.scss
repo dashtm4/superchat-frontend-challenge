@@ -1,0 +1,50 @@
+@import '../../styles';
+
+.top-bar--wrapper {
+  z-index: 1;
+  padding: 18px 32px;
+  box-shadow: 0 0 5px $color--border;
+  background-color: $color-white;
+
+  .top-bar--status {
+    @include flex-layout();
+    @include flex-layout-align(space-between, center);
+
+    &-left {
+      @include flex-layout();
+
+      .top-bar--status-item {
+        margin-right: 24px;
+
+        &:last-of-type {
+          margin-right: 0px;
+        }
+
+        .label {
+          @include font-style($color--label, 'Roboto', 13px);
+          line-height: 19px;
+        }
+
+        .price {
+          @include font-style($color--primary, 'Rubik', 19px);
+          line-height: 25.8px;
+        }
+      }
+    }
+
+    &-right {
+      @include flex-layout();
+
+      img {
+        margin-left: 10px;
+        padding: 1px;
+        border: 3px solid transparent;
+        cursor: pointer;
+      }
+
+      .active {
+        border: 3px solid $color--focus;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../../styles';
+
+.services--wrapper {
+  padding: 40px 32px 32px;
+
+  .title {
+    @include font-style($color--primary, 'Rubik', 39px, 300);
+    margin-bottom: 16px;
+  }
+
+  .services--action {
+    @include flex-layout();
+    align-items: flex-end;
+
+    .services--form-input {
+      margin-right: 8px;
+    }
+
+    .reset--button{
+      width: 149px;
+    }
+  }
+  .services--item {
+    margin: 24px 0;
+  }
+}

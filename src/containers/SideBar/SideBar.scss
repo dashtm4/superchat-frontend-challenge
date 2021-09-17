@@ -1,0 +1,28 @@
+@import '../../styles';
+
+.sidebar--wrapper {
+  z-index: 2;
+  background-color: $color--sidebar-bg;
+
+  .logo {
+    @extend .flex-center;
+    padding: 20px;
+  }
+
+  .sidebar-item {
+    @extend .flex-center;
+    padding: 24px;
+    cursor: pointer;
+
+    &--shape {
+      border: 4px solid $color--sidebar-item;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+    }
+
+    .active {
+      border-color: $color-white;
+    }
+  }
+}
